@@ -644,7 +644,7 @@
             </div>
             <div class="form-group">
                 <label>ডেলিভারি সময়</label>
-                <input type="text" id="deliveryTime" placeholder="কত দিন লাগবে">
+                <input type="text" id="deliveryTime" placeholder=" সময় লাগবে">
             </div>
             
             <div class="form-group">
@@ -730,8 +730,8 @@
                 <input type="number" id="editServicePrice" placeholder="মূল্য লিখুন">
             </div>
             <div class="form-group">
-                <label>ডেলিভারি সময় (দিন)</label>
-                <input type="number" id="editDeliveryTime" placeholder="কত দিন লাগবে">
+                <label>ডেলিভারি সময়</label>
+                <input type="number" id="editDeliveryTime" placeholder=" সময় লাগবে">
             </div>
             
             <div class="form-group">
@@ -1092,7 +1092,7 @@
                         <div class="service-title">${service.name}</div>
                         <div class="service-description">${service.description}</div>
                         <div class="service-price">৳${service.price}</div>
-                        <div style="color: #666; margin-bottom: 15px;">ডেলিভারি: ${service.deliveryTime} দিন</div>
+                        <div style="color: #666; margin-bottom: 15px;">ডেলিভারি: ${service.deliveryTime} সময়</div>
                         <button class="btn btn-primary" onclick="window.orderService('${id}')">অর্ডার করুন</button>
                     </div>
                 `;
@@ -1104,7 +1104,7 @@
                         <div class="service-title">${service.name}</div>
                         <div class="service-description">${service.description}</div>
                         <div class="service-price">৳${service.price}</div>
-                        <div style="color: #666; margin-bottom: 15px;">ডেলিভারি: ${service.deliveryTime} দিন</div>
+                        <div style="color: #666; margin-bottom: 15px;">ডেলিভারি: ${service.deliveryTime} সময়</div>
                         <div style="display: flex; gap: 10px;">
                             <button class="btn btn-warning" onclick="window.editService('${id}')">সম্পাদনা</button>
                             <button class="btn btn-danger" onclick="window.deleteService('${id}')">মুছুন</button>
@@ -1643,7 +1643,7 @@
                 <div class="service-title">${service.name}</div>
                 <div class="service-description">${service.description}</div>
                 <div class="service-price">৳${service.price}</div>
-                <div style="color: #666; margin-bottom: 20px;">ডেলিভারি: ${service.deliveryTime} দিন</div>
+                <div style="color: #666; margin-bottom: 20px;">ডেলিভারি: ${service.deliveryTime} সময়</div>
             `;
 
             // Add custom order fields
